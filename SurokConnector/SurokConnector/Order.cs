@@ -13,6 +13,8 @@ namespace SurokConnector
     public class Order
     {
         [DataMember]
+        public string order_guid;
+        [DataMember]
         public int order_num;
         [DataMember]
         public int waiter_id;
