@@ -1,0 +1,6 @@
+C:\PROJECT\SUROK_CONNECTOR\SurokConnector\SurokConnector\bin\Debug\SurokConnector.dll
+C:\PROJECT\SUROK_CONNECTOR\SurokConnector\SurokConnector\bin\Debug\SurokConnector.pdb
+C:\PROJECT\SUROK_CONNECTOR\SurokConnector\SurokConnector\obj\Debug\SurokConnector.csproj.AssemblyReference.cache
+C:\PROJECT\SUROK_CONNECTOR\SurokConnector\SurokConnector\obj\Debug\SurokConnector.csproj.CoreCompileInputs.cache
+C:\PROJECT\SUROK_CONNECTOR\SurokConnector\SurokConnector\obj\Debug\SurokConnector.dll
+C:\PROJECT\SUROK_CONNECTOR\SurokConnector\SurokConnector\obj\Debug\SurokConnector.pdb

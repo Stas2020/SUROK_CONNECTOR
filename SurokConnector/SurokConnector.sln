@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurokConnector", "SurokConnector\SurokConnector.csproj", "{92AA201D-5324-45B9-A4F5-478103A3A629}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92AA201D-5324-45B9-A4F5-478103A3A629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92AA201D-5324-45B9-A4F5-478103A3A629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92AA201D-5324-45B9-A4F5-478103A3A629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92AA201D-5324-45B9-A4F5-478103A3A629}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB8893F7-8956-4AEF-9179-42035E2EEB6E}
+	EndGlobalSection
+EndGlobal
