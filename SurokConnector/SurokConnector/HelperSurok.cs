@@ -17,7 +17,7 @@ namespace SurokConnector
         /// <param name="transaction_id"></param>
         /// <param name="error_message"></param>
         /// <returns></returns>
-        public delegate bool TApplyPoints(int amount, int transaction_id, ref string error_message);
+        public delegate bool TApplyPoints(int amount, int transaction_id, [MarshalAs(UnmanagedType.LPWStr)] string order_guid, ref string error_message);
 
         /// <summary>
         /// Вызывается когда решили накопить баллы 
@@ -26,7 +26,7 @@ namespace SurokConnector
         /// <param name="phone"></param>
         /// <param name="error_message"></param>
         /// <returns></returns>
-        public delegate bool TEnrollPoints(int amount, [MarshalAs(UnmanagedType.LPWStr)] string phone, ref string error_message);
+        public delegate bool TEnrollPoints(int amount, [MarshalAs(UnmanagedType.LPWStr)] string phone, [MarshalAs(UnmanagedType.LPWStr)] string order_guid, ref string error_message);
 
         /// <summary>
         /// Вызывается когда накладывается скидка 15%
@@ -34,7 +34,7 @@ namespace SurokConnector
         /// <param name="amount"></param>
         /// <param name="error_message"></param>
         /// <returns></returns>
-        public delegate bool TApplyDiscount(int amount, ref string error_message);
+        public delegate bool TApplyDiscount(int amount, [MarshalAs(UnmanagedType.LPWStr)] string order_guid, ref string error_message);
 
 
         [DllImport("SUROK.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
