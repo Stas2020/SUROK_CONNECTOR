@@ -50,6 +50,9 @@ namespace SurokConnector
         internal static extern bool CloseCheckWitchEnrollPoints_IIKO(int shop_id, DateTime business_date, string phone, string order_json);
 
         [DllImport("SUROK.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
+        internal static extern bool CloseCheckWitchApplyDiscount_IIKO(int shop_id, DateTime business_date, string card_code, string order_json);
+        
+        [DllImport("SUROK.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
         internal static extern void CancelTransaction_IIKO(int transaction_id);
 
 
@@ -104,6 +107,18 @@ namespace SurokConnector
             return CloseCheckWitchEnrollPoints_IIKO(shop_id, business_date, phone, order.GetJsonStr());
         }
 
+        /// <summary>
+        /// Вызываем при закрытии чека при условии что на чек наложена скидка 
+        /// </summary>
+        /// <param name="shop_id"></param>
+        /// <param name="business_date"></param>
+        /// <param name="phone"></param>
+        /// <param name="order"></param>
+        /// <returns></returns>
+        public bool CloseCheckWitchDiscount(int shop_id, DateTime business_date, string card_code, Order order)
+        {
+            return CloseCheckWitchApplyDiscount_IIKO(shop_id, business_date, card_code, order.GetJsonStr());            
+        }
 
         /// <summary>
         /// Вызываем когда удалили баллы (скидку) с чека
