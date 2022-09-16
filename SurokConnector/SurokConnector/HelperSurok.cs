@@ -34,7 +34,7 @@ namespace SurokConnector
         /// <param name="amount"></param>
         /// <param name="error_message"></param>
         /// <returns></returns>
-        public delegate bool TApplyDiscount(int amount, [MarshalAs(UnmanagedType.LPWStr)] string order_guid, ref string error_message);
+        public delegate bool TApplyDiscount(int amount, [MarshalAs(UnmanagedType.LPWStr)] string card_code, [MarshalAs(UnmanagedType.LPWStr)] string order_guid, ref string error_message);
 
 
         [DllImport("SUROK.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
